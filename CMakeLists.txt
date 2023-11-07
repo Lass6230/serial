@@ -3,6 +3,9 @@ project(serial)
 
 find_package(ament_cmake REQUIRED)
 
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fPIC")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fPIC")
+
 ament_export_include_directories(include)
 ament_export_libraries(${PROJECT_NAME})
 
